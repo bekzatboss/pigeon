@@ -1,0 +1,48 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "SenderSendPackage",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "SenderChooseDeparture",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "SenderChooseArrive",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "senderMail",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "AllPacksOfAllSenders",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "mailFromAllPacks",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "sender_send_create_time",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "fcm_tokens",
+      "fieldPath": "fcm_token",
+      "indexes": [
+        {
+          "order": "ASCENDING",
+          "queryScope": "COLLECTION_GROUP"
+        }
+      ]
+    }
+  ]
+}
