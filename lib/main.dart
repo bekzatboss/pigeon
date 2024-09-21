@@ -15,6 +15,7 @@ import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'index.dart';
+import 'package:flutter_meta_sdk/flutter_meta_sdk.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
